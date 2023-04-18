@@ -1,12 +1,7 @@
-
-
 #pragma once
-
-	int arr[] = { 1,45, 67, 90, 999, 19282,283847 };
-
-	int binarySearch(  int key) 
+	int binarySearch(int arr[],int n,  int key) 
 	{
-		int n = sizeof(arr) / sizeof(int);
+		
 
 		int start = 0;
 		int end = n - 1;
@@ -36,7 +31,7 @@
 
 
 
-	int linearSSearch(int arr[], int n, int key)
+	int linearSearch(int arr[], int n, int key)
 	{
 		for (int i = 1; i <= n; i++)
 		{
