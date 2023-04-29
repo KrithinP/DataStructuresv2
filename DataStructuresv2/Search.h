@@ -33,12 +33,12 @@
 
 	int linearSearch(int arr[], int n, int key)
 	{
-		for (int i = 1; i <= n; i++)
+		for (int i = 0; i < n; i++)
 		{
-			if (key == arr[i - 1])
+			if (key == arr[i ])
 			{
 				return i;
 			}
 		}
-		return 0;
+		return -1;
 	}
