@@ -5,6 +5,11 @@ using namespace std;
 #include "Search.h"
 #include "Sort.h"
 
+#include "GraphdistanceProg.h"
+#include "StringCompressionProg2.h"
+#include "Sorted2dArraySearch.h"
+#include "MangoTrees.h"
+
 int *arr;
 
 int arrIn()
@@ -37,7 +42,7 @@ void linear()
     else
         cout << "The element does not exist";
     
-}
+}    
 
 void binary()
 {
@@ -55,7 +60,7 @@ void binary()
         cout << "The element does not exist";
 }
 
-vector<int> sortingWithComparator(vector<int> a, bool flag) {
+/*vector<int> sortingWithComparator(vector<int> a, bool flag) {
 
     int n = a.size();
     for (int i = 0; i < n - 1; i++)
@@ -86,30 +91,62 @@ vector<int> sortingWithComparator(vector<int> a, bool flag) {
     }
     return a;
 
-}
+}*/
 
 int main()
 {
+    //arrays(int)
+
+    /*arrays
   //  linear();
-    vector<int> myvector1{ 22,28,22, 40,30,29 };
-    cout << myvector1.size();
-    vector<int> myvectors = sortingWithComparator(myvector1, true);
-
-    for (int i = 0; i < myvectors.capacity(); ++i) {
-       
-            cout << myvectors[i];
-            cout << " ";
-        
-    }
+   
+    //vector<int> myvector1{ 22,28,22, 40,30,29 };
+    //cout << myvector1.size();
+    //vector<int> myvectors = sortingWithComparator(myvector1, true);
+    //for (int i = 0; i < myvectors.capacity(); ++i) {
+    //   
+    //        cout << myvectors[i];
+    //        cout << " ";
+    //    
+    //}
+    
   //  binary();
-}
+  */
 
+    // character array
+    
+    //character arrays
+  //  shortestRoute();
+    //string s1 = "aaabbccddee";
+    //cout << compressString(s1) << endl;
+    //string s2 = "abcd";
+    //cout << compressString(s2) << endl;
+    
+    //2d arrays
+    
+    //2darraysearch(staircase Search)
+    int a[][4] =    { 
+                      {10, 20, 30, 40},
+                      {15, 25, 35, 45},
+                      {27, 29, 37, 48},
+                      {32, 33, 39, 50} 
+                    };
+
+    int n = 4, m = 4;
+
+    pair<int, int> coords = staircaseSearch(a, n, m, 39);
+    cout << coords.first << " " << coords.second << endl;
+}
+// reference
 /*
 Reference 
+
 size() – Returns the number of elements in the vector.
 max_size() – Returns the maximum number of elements that the vector can hold.
 capacity() – Returns the size of the storage space currently allocated to the vector expressed as number of elements.
 resize(n) – Resizes the container so that it contains ‘n’ elements.
 empty() – Returns whether the container is empty.
 shrink_to_fit() – Reduces the capacity of the container to fit its sizeand destroys all elements beyond the capacity.
-reserve() – Requests that the vector capacity be at least enough to contain n elements.*/
+reserve() – Requests that the vector capacity be at least enough to contain n elements.
+https://www.w3schools.com/c/c_strings_functions.php - string functions
+*/

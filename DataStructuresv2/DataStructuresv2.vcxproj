@@ -142,6 +142,10 @@
     <ClCompile Include="DataStructuresv2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GraphdistanceProg.h" />
+    <ClInclude Include="MangoTrees.h" />
+    <ClInclude Include="Sorted2dArraySearch.h" />
+    <ClInclude Include="StringCompressionProg2.h" />
     <ClInclude Include="Sort.h" />
     <ClInclude Include="Search.h" />
   </ItemGroup>

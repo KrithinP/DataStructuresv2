@@ -31,3 +31,31 @@ void insertionSort(int arr[], int n)
 	}
 }
 
+void countingSort(int arr[], int n)
+{
+	int largest = -1;
+
+	for (int i = 0; i < n; i++)
+	{
+		largest = max(largest, arr[i]);
+	}
+
+
+	vector<int> arrF(largest + 1, 0);
+
+	for (int i = 0; i < n; i++)
+	{
+		int el = arr[i];
+		arrF[el + 1]++;
+	}
+
+	for (int i = 0, j = 0; i < n; i++)
+	{
+		int freq = arrF[i];
+		while (freq > 0)
+		{
+			freq--;
+		}
+
+	}
+}

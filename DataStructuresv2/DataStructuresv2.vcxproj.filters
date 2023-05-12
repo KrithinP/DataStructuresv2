@@ -26,5 +26,17 @@
     <ClInclude Include="Sort.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="GraphdistanceProg.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringCompressionProg2.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sorted2dArraySearch.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MangoTrees.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
