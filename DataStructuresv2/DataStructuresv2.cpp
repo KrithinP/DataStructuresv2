@@ -125,17 +125,28 @@ int main()
     //2d arrays
     
     //2darraysearch(staircase Search)
-    int a[][4] =    { 
-                      {10, 20, 30, 40},
-                      {15, 25, 35, 45},
-                      {27, 29, 37, 48},
-                      {32, 33, 39, 50} 
-                    };
+    //int a[][4] =    { 
+    //                  {10, 20, 30, 40},
+    //                  {15, 25, 35, 45},
+    //                  {27, 29, 37, 48},
+    //                  {32, 33, 39, 50} 
+    //                };
+    //int n = 4, m = 4;
+    //pair<int, int> coords = staircaseSearch(a, n, m, 39);
+    //cout << coords.first << " " << coords.second << endl;
 
-    int n = 4, m = 4;
-
-    pair<int, int> coords = staircaseSearch(a, n, m, 39);
-    cout << coords.first << " " << coords.second << endl;
+    // mango trees
+    int ar[][6] =
+    {
+        {'.','#', '#','.','.','.'},
+        {'#','.', '.','#','#','.'},
+        {'.','#', '.','.','.','.'},
+        {'.','#', '#','.','.','.'},
+        {'#','.', '.','#','#','.'},
+        {'.','#', '.','.','.','.'},
+    };
+     quadrants(ar, 6, 6);
+                    
 }
 // reference
 /*
