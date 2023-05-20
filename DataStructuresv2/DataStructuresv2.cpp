@@ -11,6 +11,49 @@ using namespace std;
 #include "MangoTrees.h"
 
 int *arr;
+class Vector
+{
+    int* a;
+    int cs;
+    int ms;
+
+public:
+    Vector()
+    {
+        
+        cs = 0;
+        ms = 1;
+        a = new int[ms];
+    }
+
+    void push_back(int d)
+    {
+        if (cs = ms)
+        {
+            int* oldarr = a;
+            ms = 2 * ms;
+            a = new int[ms];
+
+            for (int i = 0; i < cs; i++)
+            {
+                a[i] = oldarr[i];
+            }
+            delete [] oldarr;
+        }
+        a[cs] = d;
+        cs++;
+    }
+
+    void pop_back()
+    {
+        cs--;
+    }
+
+    bool isEmpty()
+    {
+        return cs == 0;
+    }
+};
 
 int arrIn()
 {
@@ -135,18 +178,23 @@ int main()
     //pair<int, int> coords = staircaseSearch(a, n, m, 39);
     //cout << coords.first << " " << coords.second << endl;
 
-    // mango trees
-    int ar[][6] =
-    {
-        {'.','#', '#','.','.','.'},
-        {'#','.', '.','#','#','.'},
-        {'.','#', '.','.','.','.'},
-        {'.','#', '#','.','.','.'},
-        {'#','.', '.','#','#','.'},
-        {'.','#', '.','.','.','.'},
-    };
-     quadrants(ar, 6, 6);
-                    
+
+    //// mango trees
+    //int ar[][6] =
+    //{
+    //    {'.','#', '#','.','.','.'},
+    //    {'#','.', '.','#','#','.'},
+    //    {'.','#', '.','.','.','.'},
+    //    {'.','#', '#','.','.','.'},
+    //    {'#','.', '.','#','#','.'},
+    //    {'.','#', '.','.','.','.'},
+    //};
+    // quadrants(ar, 6, 6);
+
+    //VECTORS
+
+    Vector v;
+
 }
 // reference
 /*
@@ -160,4 +208,10 @@ empty() – Returns whether the container is empty.
 shrink_to_fit() – Reduces the capacity of the container to fit its sizeand destroys all elements beyond the capacity.
 reserve() – Requests that the vector capacity be at least enough to contain n elements.
 https://www.w3schools.com/c/c_strings_functions.php - string functions
+
+     vector<int> arr = { 1,4,6,8,3,1,3,4 };
+     arr.pop_back();
+     arr.push_back(15);
+     cout<<arr.size()<<endl;
+     cout << arr.capacity() << endl;
 */

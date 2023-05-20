@@ -38,5 +38,8 @@
     <ClInclude Include="MangoTrees.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="vectorFunc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
