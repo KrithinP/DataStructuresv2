@@ -59,3 +59,36 @@ void countingSort(int arr[], int n)
 
 	}
 }
+
+/*vector<int> sortingWithComparator(vector<int> a, bool flag) {
+
+	int n = a.size();
+	for (int i = 0; i < n - 1; i++)
+	{
+		for (int j = 0; j < n - i - 1; j++)
+		{
+			if (!flag)
+			{
+				if (a[j] > a[j + 1])
+				{
+
+					int temp = a[j];
+					a[j] = a[j + 1];
+					a[j + 1] = temp;
+				}
+			}
+
+			  else
+					if (a[j] < a[j + 1])
+					{
+
+						int temp = a[j];
+						a[j] = a[j + 1];
+						a[j + 1] = temp;
+					}
+
+		}
+	}
+	return a;
+
+}*/

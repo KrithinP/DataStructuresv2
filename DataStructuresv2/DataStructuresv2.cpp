@@ -2,6 +2,9 @@ using namespace std;
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
+
+#include "vector.h"
 #include "Search.h"
 #include "Sort.h"
 
@@ -10,50 +13,10 @@ using namespace std;
 #include "Sorted2dArraySearch.h"
 #include "MangoTrees.h"
 
+#include "Topper.h"
+
 int *arr;
-class Vector
-{
-    int* a;
-    int cs;
-    int ms;
 
-public:
-    Vector()
-    {
-        
-        cs = 0;
-        ms = 1;
-        a = new int[ms];
-    }
-
-    void push_back(int d)
-    {
-        if (cs = ms)
-        {
-            int* oldarr = a;
-            ms = 2 * ms;
-            a = new int[ms];
-
-            for (int i = 0; i < cs; i++)
-            {
-                a[i] = oldarr[i];
-            }
-            delete [] oldarr;
-        }
-        a[cs] = d;
-        cs++;
-    }
-
-    void pop_back()
-    {
-        cs--;
-    }
-
-    bool isEmpty()
-    {
-        return cs == 0;
-    }
-};
 
 int arrIn()
 {
@@ -103,38 +66,7 @@ void binary()
         cout << "The element does not exist";
 }
 
-/*vector<int> sortingWithComparator(vector<int> a, bool flag) {
 
-    int n = a.size();
-    for (int i = 0; i < n - 1; i++)
-    {
-        for (int j = 0; j < n - i - 1; j++)
-        {
-            if (!flag)
-            {
-                if (a[j] > a[j + 1])
-                {
-
-                    int temp = a[j];
-                    a[j] = a[j + 1];
-                    a[j + 1] = temp;
-                }
-            }
-
-              else
-                    if (a[j] < a[j + 1])
-                    {
-
-                        int temp = a[j];
-                        a[j] = a[j + 1];
-                        a[j + 1] = temp;
-                    }
-
-        }
-    }
-    return a;
-
-}*/
 
 int main()
 {
@@ -191,9 +123,41 @@ int main()
     //};
     // quadrants(ar, 6, 6);
 
-    //VECTORS
+    //VECTORS Func
 
-    Vector v;
+    //Vector v(5);
+    //v.push_back(1);
+    //v.push_back(2);
+    //v.push_back(3);
+    //v.push_back(4);
+    //v.push_back(15);
+    //v.push_back(6);
+    //v.pop_back();
+    //cout << v.front() << endl;
+    //cout << v.back() << endl;
+    //cout << v.at(2) << endl;
+    //cout << v.size() << endl; //5
+    //cout << v.capacity() << endl; //8
+
+    // Find Topper with marks and return rank
+    
+    //int lv = 0;
+    //vector<pair<string, vector<int> > >  student_marks = 
+    //{
+    //        {"Devansh", {91,90,96}},
+    //        {"Yoyo",{95,93,92}},
+    //        {"Chattagoonga",{17,19,32}},
+    //        {"Rithvik",{97,98,99}},
+    //        {"Sujji", {101,105,109}}
+    //};
+    //sort(student_marks.begin(), student_marks.end(), compare);
+    //for (auto it : student_marks) {
+    //    cout << " Air "<<lv << " " << it.first << " " << calcTotalMarks(it.second) << endl;
+    //    lv++;
+    //}
+
+
+
 
 }
 // reference

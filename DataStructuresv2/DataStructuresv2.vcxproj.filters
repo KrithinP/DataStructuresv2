@@ -41,5 +41,11 @@
     <ClInclude Include="vectorFunc.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="vector.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Topper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
