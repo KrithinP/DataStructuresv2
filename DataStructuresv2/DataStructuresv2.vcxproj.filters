@@ -38,13 +38,16 @@
     <ClInclude Include="MangoTrees.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="vectorFunc.h">
+    <ClInclude Include="VectorFunc.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="vector.h">
+    <ClInclude Include="Vector.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Topper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OddEven.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

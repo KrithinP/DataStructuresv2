@@ -144,13 +144,14 @@
   <ItemGroup>
     <ClInclude Include="GraphdistanceProg.h" />
     <ClInclude Include="MangoTrees.h" />
+    <ClInclude Include="OddEven.h" />
     <ClInclude Include="Sorted2dArraySearch.h" />
     <ClInclude Include="StringCompressionProg2.h" />
     <ClInclude Include="Sort.h" />
     <ClInclude Include="Search.h" />
     <ClInclude Include="Topper.h" />
-    <ClInclude Include="vector.h" />
-    <ClInclude Include="vectorFunc.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="VectorFunc.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

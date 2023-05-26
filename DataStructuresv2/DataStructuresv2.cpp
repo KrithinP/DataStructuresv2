@@ -4,7 +4,7 @@ using namespace std;
 #include <vector>
 #include <algorithm>
 
-#include "vector.h"
+#include "Vector.h"
 #include "Search.h"
 #include "Sort.h"
 
@@ -14,6 +14,8 @@ using namespace std;
 #include "MangoTrees.h"
 
 #include "Topper.h"
+#include "OddEven.h"
+#include "VectorFunc.h"
 
 int *arr;
 
@@ -156,9 +158,32 @@ int main()
     //    lv++;
     //}
 
+    // Bitwise operations
+
+    //Find if number is odd/even
+    //cout<<isEven(6);
+
+    /* Replace Bits in N by M
+    You are given two 32-bit numbers, N and M, and two bit positions i and j.
+    Write a method to set all bits between i and j in N equal to M.
+    M (becomes a substring of N locationed at and starting at j)
+
+    Example:
+    N = 10000000000;
+    M = 10101;
+    i = 2, j = 6
+    Output : 1001010100 */
+    //int N = 15;
+    //int M = 2;
+    //int i = 1, j = 3;
+
+    //replaceBitsinRange(N, M, i, j);
+    //cout << N;
 
 
 
+
+    return 0;
 }
 // reference
 /*
