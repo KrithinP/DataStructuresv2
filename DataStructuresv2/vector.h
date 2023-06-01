@@ -1,5 +1,6 @@
-class Vector {
-	//Data Members
+class Vector 
+{
+
 	int* a;
 	int cs;
 	int ms;

@@ -17,6 +17,8 @@ using namespace std;
 #include "OddEven.h"
 #include "VectorFunc.h"
 
+#include "RecursiveFunc.h"
+
 int *arr;
 
 
@@ -114,6 +116,7 @@ int main()
 
 
     //// mango trees
+    
     //int ar[][6] =
     //{
     //    {'.','#', '#','.','.','.'},
@@ -163,30 +166,70 @@ int main()
     //Find if number is odd/even
     //cout<<isEven(6);
 
-    /* Replace Bits in N by M
-    You are given two 32-bit numbers, N and M, and two bit positions i and j.
-    Write a method to set all bits between i and j in N equal to M.
-    M (becomes a substring of N locationed at and starting at j)
+    // /*Replace Bits in N by M
+    //You are given two 32-bit numbers, N and M, and two bit positions i and j.
+    //Write a method to set all bits between i and j in N equal to M.
+    //M (becomes a substring of N locationed at and starting at j)
 
-    Example:
-    N = 10000000000;
-    M = 10101;
-    i = 2, j = 6
-    Output : 1001010100 */
+    //Example:
+    //N = 10000000000;
+    //M = 10101;
+    //i = 2, j = 6
+    //Output : 1001010100 */
     //int N = 15;
     //int M = 2;
     //int i = 1, j = 3;
-
     //replaceBitsinRange(N, M, i, j);
     //cout << N;
 
+    //fast exponentiation
+    /*int a, n;
+    cin >> a >> n;
+    cout << fastExpo(a, n) << endl;*/
 
+    //Recursive Functions
 
+    //Factorial of a number
+    //double n;
+    //double f = 1;
+    //cout << "Enter the number to find its factorial" << endl;
+    //cin >> n;
+    //cout<<factorial(n,f)<<endl;
+
+    //sorted array
+    //int arr[] = { 1,2,3,5,16,7 };
+    //int n = sizeof(arr) / sizeof(int);
+    //cout << isSortedTwo(arr, 0, n) << endl;
+
+    //increase/decrease
+    //int n;
+    //cin >> n;
+    //dec(n);
+    //cout << endl;
+    //inc(n);
+
+    //find power of a number
+    //int a, n;
+    //cin >> a >> n;
+    //cout << power(a, n) << endl;
+    //cout << fastPower(a, n) << endl;
+
+    //word print spell, inp: 123, outp: one two three
+    //int n;
+    //cin >> n;
+    //printSpell(n);
+
+vector<int> v = { 1, 2, 5 ,3 ,1 ,2 ,3 ,8 ,6, 3, 6 ,7 ,9 };
+vector<int> arr = findAllOccurences(3, v);
+
+for (int x : arr)
+cout << x << " ";
 
     return 0;
 }
 // reference
-/*
+
+/**
 Reference 
 
 size() – Returns the number of elements in the vector.
