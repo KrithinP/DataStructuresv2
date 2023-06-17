@@ -19,6 +19,8 @@ using namespace std;
 
 #include "RecursiveFunc.h"
 
+#include "subset.h"
+
 int *arr;
 
 
@@ -144,6 +146,12 @@ int main()
     //cout << v.size() << endl; //5
     //cout << v.capacity() << endl; //8
 
+    //fiind all occurences of a number and return all the indexes of the number in the array
+     //vector<int> v = { 1, 2, 5 ,3 ,1 ,2 ,3 ,8 ,6, 3, 6 ,7 ,9 };
+    //vector<int> arr = findAllOccurences(3, v);
+    //for (int x : arr)
+    //cout << x << " ";
+
     // Find Topper with marks and return rank
     
     //int lv = 0;
@@ -219,11 +227,56 @@ int main()
     //cin >> n;
     //printSpell(n);
 
-vector<int> v = { 1, 2, 5 ,3 ,1 ,2 ,3 ,8 ,6, 3, 6 ,7 ,9 };
-vector<int> arr = findAllOccurences(3, v);
+    //Divide & conquer
 
-for (int x : arr)
-cout << x << " ";
+    // //Merge Sort shit
+
+    /*
+    vector<int> arr{ 10,5,2,0,7,6,4 };
+
+    int s = 0;
+    int e = arr.size() - 1;
+    mergesort(arr, s, e);
+    for (int x : arr) 
+        cout << x << ",";
+    
+    cout << endl;*/
+
+    //quick sorrt shitt
+    /*vector<int> arr{10,5,2,0,7,6,4};
+    int n = arr.size();
+    quicksort(arr, 0, n - 1);
+    for (int x : arr) 
+        cout << x << " ,";*/
+
+    // size of data type shit
+        
+    //cout << "Size of char : " << sizeof(char) << endl;
+    //cout << "Size of int : " << sizeof(int) << endl;
+    //cout << "Size of short int : " << sizeof(short int) << endl;
+    //cout << "Size of long int : " << sizeof(long int) << endl;
+    //cout << "Size of float : " << sizeof(float) << endl;
+    //cout << "Size of double : " << sizeof(double) << endl;
+    //cout << "Size of wchar_t : " << sizeof(wchar_t) << endl;
+
+    // Finding all the subsets of a set
+
+    /*char inp[100];
+    char output[100];
+    cin >> inp;
+    vector<string> list;
+
+    findTheStupidSubsetsOrder(inp, output, 0, 0,list);
+    sort(list.begin(), list.end(),);
+
+    for (auto s : list)
+        cout << s << ",";*/
+
+
+    
+    
+
+
 
     return 0;
 }

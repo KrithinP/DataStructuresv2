@@ -150,6 +150,7 @@
     <ClInclude Include="StringCompressionProg2.h" />
     <ClInclude Include="Sort.h" />
     <ClInclude Include="Search.h" />
+    <ClInclude Include="Subset.h" />
     <ClInclude Include="Topper.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="VectorFunc.h" />
